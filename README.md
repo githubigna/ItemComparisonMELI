@@ -31,18 +31,18 @@ curl "http://localhost:5000/api/products?q=ram&page=1&pageSize=5"
 ```
 ## Detalle
 ```
-curl "http://localhost:5000/api/products/p-iphone15"
+curl "http://localhost:5102/api/products/p-iphone15"
 ```
 ## Comparar
 ```
-curl -X POST "http://localhost:5000/api/products/compare" \
+curl -X POST "http://localhost:5102/api/products/compare" \
   -H "Content-Type: application/json" \
   -d "{\"productIds\":[\"p-iphone15\",\"p-pixel8\"]}"
 ```
 
 ## Health
 ```
-curl "http://localhost:5000/health"
+curl "http://localhost:5102/health"
 ```
 ## Manejo de errores
 
