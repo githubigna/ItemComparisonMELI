@@ -27,7 +27,7 @@ dotnet run --project src\ItemComparison.Api
 
 ## Listar productos (página 1, 5 resultados, búsqueda "ram")
 ```
-curl "http://localhost:5000/api/products?q=ram&page=1&pageSize=5"
+curl "http://localhost:5102/api/products?q=ram&page=1&pageSize=5"
 ```
 ## Detalle
 ```
