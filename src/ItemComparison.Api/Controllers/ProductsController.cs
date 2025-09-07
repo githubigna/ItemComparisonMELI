@@ -27,9 +27,8 @@ public sealed class ProductsController(IProductRepository repo) : ControllerBase
     [HttpPost("compare")]
     public async Task<ActionResult<CompareResponse>> Compare([FromBody] CompareRequest request)
     {
-        if (request.ProductIds is null || request.ProductIds.Count == 0)
-            return BadRequest("ProductIds is required.");
-
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
         var products = await repo.GetManyAsync(request.ProductIds);
         if (products.Count == 0) return NotFound("No products found.");
 
@@ -42,6 +41,7 @@ public sealed class ProductsController(IProductRepository repo) : ControllerBase
         var dtos = products.Select(Map).ToList();
         return Ok(new CompareResponse(dtos, allKeys));
     }
+
 
     private static ProductDto Map(ItemComparison.Api.Models.Product p) =>
         new(p.Id, p.Name, p.Description, p.ImageUrl, p.PriceMin, p.PriceMax,
