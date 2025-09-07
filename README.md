@@ -1,7 +1,7 @@
 ﻿# Item Comparison API (C# .NET 8)
 
 API REST que permite **listar productos**, **buscar por término** y **comparar por especificaciones**.  
-Los datos se leen desde un archivo JSON (`products.json`), sin necesidad de base de datos real.
+Los datos se leen desde un archivo JSON (`products.json`).
 
 ---
 
