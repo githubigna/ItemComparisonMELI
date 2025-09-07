@@ -1,0 +1,28 @@
+[
+  {
+    "Id": "p-iphone15",
+    "Name": "iPhone 15",
+    "Description": "Smartphone 6.1\" OLED",
+    "ImageUrl": "https://example.com/img/iphone15.jpg",
+    "PriceMin": 999.00,
+    "PriceMax": 1299.00,
+    "Specs": [
+      { "Key": "Storage", "Value": "128/256/512 GB" },
+      { "Key": "RAM", "Value": "6 GB" },
+      { "Key": "Weight", "Value": "171 g" }
+    ]
+  },
+  {
+    "Id": "p-pixel8",
+    "Name": "Pixel 8",
+    "Description": "Smartphone 6.2\" OLED",
+    "ImageUrl": "https://example.com/img/pixel8.jpg",
+    "PriceMin": 799.00,
+    "PriceMax": 999.00,
+    "Specs": [
+      { "Key": "Storage", "Value": "128/256 GB" },
+      { "Key": "RAM", "Value": "8 GB" },
+      { "Key": "Weight", "Value": "187 g" }
+    ]
+  }
+]
